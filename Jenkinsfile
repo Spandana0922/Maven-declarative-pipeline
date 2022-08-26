@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'redhat-node' }
     tools {
-      name: 'maven-3.8.6', type: 'maven'
+      maven 'maven3.8.6'
     }
     triggers {
         pollSCM 'H * * * *'
