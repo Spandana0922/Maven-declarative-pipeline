@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git 'https://github.com/Spandana0922/Maven-declarative-pipeline.git'
+                git 'https://github.com/Spandana0922/java-web-app-docker.git'
             }
         }
         stage('Build') {
