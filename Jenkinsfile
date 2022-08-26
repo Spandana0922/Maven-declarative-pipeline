@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'redhat-node' }
+    agent { label 'java-node' }
     tools {
       maven 'apache-maven-3.8.6'
     }
