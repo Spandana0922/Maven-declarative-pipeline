@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'none' }
+    agent { label 'built-in' }
     tools {
       maven 'maven-3.8.6'
     }
