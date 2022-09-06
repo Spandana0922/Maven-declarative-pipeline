@@ -1,5 +1,4 @@
 pipeline {
-    agent { label 'java-node' }
     tools {
       maven 'apache-maven-3.8.6'
     }
@@ -25,7 +24,7 @@ pipeline {
         }
         stage('deploy') { 
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'admin', path: '', url: 'http://13.233.207.245:8080/')], contextPath:null, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'admin', path: '', url: 'http://13.233.43.95:8081/')], contextPath:null, war: '**/*.war'
             }            
         }
           
